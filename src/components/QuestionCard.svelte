@@ -166,7 +166,15 @@
 				{#if isAnswering}
 					<TimeWidget {secondsLeft} />
 				{/if}
-				<input bind:value={userAnswer} placeholder="Enter your answer" />
+				<input
+					bind:value={userAnswer}
+					placeholder="Enter your answer"
+					onkeydown={(e) => {
+						if (e.key === 'Enter') {
+							submitAnswer(userAnswer);
+						}
+					}}
+				/>
 				<button
 					onclick={() => {
 						submitAnswer(userAnswer);

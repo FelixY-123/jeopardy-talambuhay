@@ -90,7 +90,16 @@
 			{/if}
 		</h2>
 
-		<input bind:value={name} placeholder="Your name" />
+		<input
+			bind:value={name}
+			placeholder="Your name"
+			onkeydown={(e) => {
+				if (e.key === 'Enter' && name.trim()) {
+					socket.emit('join', { name: name.trim(), socketId: socket.id, score: 0 });
+					submitName = true;
+				}
+			}}
+		/>
 		<button
 			onclick={() => {
 				if (name.trim()) {
