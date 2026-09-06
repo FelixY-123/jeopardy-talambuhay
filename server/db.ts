@@ -32,57 +32,57 @@ const pastQuestions: Question[] = sortQuestions([
 const presentQuestions: Question[] =
     sortQuestions([
         {
-            points: 200,
+            points: 400,
             question:
-                'What kind of rock is this?',
-            imgSrc: 'https://madera.objects.liquidweb.services/photos/16842-half-dome-closeup-from-glacier-point-steve-montalto-hmi-Rectangle-600x400.jpg',
-            answer: 'Granite',
+                'This is Donu, a character from which video game?',
+            imgSrc: '/donu-gif.gif',
+            answer: 'Slay the Spire',
         },
         {
             points: 100,
             question:
-                'What is this Cafe called?',
-            imgSrc: 'https://lh3.googleusercontent.com/p/AF1QipNsmB0ugJeJxYVrBKpRkNkyiEa6cKLamFZ4r0M=s1360-w1360-h1020',
-            answer: 'Chaotic Good',
+                'Tahini is made from which seed?',
+            imgSrc: 'https://www.aforkstale.com/wp-content/uploads/how-to-make-homemade-tahini-1200-x-1200.jpg',
+            answer: 'Sesame',
         },
         {
-            points: 300,
+            points: 200,
             question: 'What programming language is the below code?',
             imgSrc: '/programming_language.png',
             answer: 'Javascript',
         },
         {
-            points: 400,
+            points: 300,
             question:
-                'Who painted this?',
+                'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
             imgSrc:
-                "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb1tCOwOdOeYcp5iflCvvW95qCqpmNUo-TMIt3ndxzsxzmgmH18iClIIQLPO48ojPg5Rts2AUm9rZBeVPcjnjrjGaLSzCwbipQotY4EhOk3tUoHJjJyZjTqfY5s9MZ5eSkGrrqmom4JXUdHEqE-Ts8E9i-SuFf9xEukJcFBs5NuOhe6ANdODMFYzyV_Q/s16000/Unfinished.jpg",
-            answer: 'Keith Haring',
+                "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
+            answer: 'Italy',
         }
     ]);
 const futureQuestions: Question[] = sortQuestions([
     {
         points: 100,
         question:
-            'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
+            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
         imgSrc:
-            "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
-        answer: 'Italy',
+            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
+        answer: 'Isometric',
     }
 ]);
 
 
 const categories = [
     {
-        title: 'My Past',
+        title: 'Ms Feng\'s Past',
         questions: pastQuestions
     },
     {
-        title: 'My Present',
+        title: `Ms. Feng's Present`,
         questions: presentQuestions
     },
     {
-        title: 'My Future',
+        title: "Ms. Feng's Future",
         questions: futureQuestions
     }
 ];

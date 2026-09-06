@@ -122,10 +122,10 @@
 {/if}
 
 <div class="board {isNameModal || isGameOver ? 'blurred' : ''}">
-	{#each questionData as category}
+	{#each questionData as category (category.title)}
 		<div>
 			<h2 class="category">{category.title.toUpperCase()}</h2>
-			{#each category.questions as question}
+			{#each category.questions as question (question.question)}
 				<!-- svelte-ignore a11y_click_events_have_key_events -->
 				<!-- svelte-ignore a11y_no_static_element_interactions -->
 				<div
@@ -154,7 +154,7 @@
 		--theme-color: #060ce9;
 		--point-color: goldenrod;
 		font-family: 'ITC_ Korinna', sans-serif;
-		background-color: black;
+		background-color:black;
 	}
 
 	:global(input) {
