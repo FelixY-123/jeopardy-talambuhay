@@ -20,6 +20,7 @@ const webSocketServer = {
 export default defineConfig({
 	plugins: [sveltekit(), webSocketServer],
 	server: {
+		host: '0.0.0.0',
 		fs: {
 			allow: ['../static'],
 		}
