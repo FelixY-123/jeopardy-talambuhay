@@ -6,83 +6,98 @@ const sortQuestions = (questions: { points: number; question: string; answer: st
 const pastQuestions: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'What US state is the Land of Lincoln?',
-        answer: 'Illinois',
+        question: 'What is the least number of continents that makes up 90% of the world\'s population?',
+        answer: '4',
     },
     {
         points: 200,
-        question:
-            'Which country\'s flag is this?',
-        imgSrc: "https://cdn.britannica.com/34/4034-050-91EE1BCF/Flag-Myanmar.jpg",
-        answer: 'Myanmar',
+        question: 'When did the movie Shang-Chi and the Legend of the Ten Rings come out?',
+        answer: '2021',
     },
     {
         points: 300,
         question:
-            'What Ivy League school has the highest Native American enrollment (a whoppping 1%)?',
-        answer: 'Dartmouth',
+            'Who is this basketball player?',
+        imgSrc: 'https://www.si.com/.image/t_share/MTY4MDMxNjk2NTU1NjgxMDQx/klay-thompson-warriors-nba-playoffsjpg.jpg',
+        answer: 'Klay Thompson',
     },
     {
         points: 400,
-        question: 'Who wrote the Critique of Pure Reason?',
-        answer: 'Immanuel Kant',
+        question: 'Who wrote the Spy School book series?',
+        answer: 'Stuart Gibbs',
     }
 ]);
 
 const presentQuestions: Question[] =
     sortQuestions([
         {
-            points: 400,
-            question:
-                'This is Donu, a character from which video game?',
-            imgSrc: '/donu-gif.gif',
-            answer: 'Slay the Spire',
-        },
-        {
             points: 100,
             question:
-                'Tahini is made from which seed?',
-            imgSrc: 'https://www.aforkstale.com/wp-content/uploads/how-to-make-homemade-tahini-1200-x-1200.jpg',
-            answer: 'Sesame',
+                'What is my last name?',
+            answer: 'Yuan',
         },
         {
             points: 200,
-            question: 'What programming language is the below code?',
-            imgSrc: '/programming_language.png',
-            answer: 'Javascript',
+            question:
+                'What sport is this?',
+            imgSrc: 'https://assets.sportspark.co.uk/f/154676/7952x5304/54e1fa081c/a-squash-match.jpg',
+            answer: 'Squash',
+        },
+        {
+            points: 300,
+            question: 'What fish is this?',
+            imgSrc: 'https://safmc.net/wp-content/uploads/2022/04/yellowtail-snapper.png',
+            answer: 'Yellowtail',
+        },
+        {
+            points: 400,
+            question:
+                'What is the best somewhat nonchalant buzz word for history class?',
+            answer: 'Justification',
+        }
+    ]);
+const futureQuestions: Question[] = 
+    sortQuestions([
+        {
+            points: 100,
+            question:
+                'When is the first day of winter break this year? Please answer MM/DD.',
+            answer: '12/19',
+        },
+        {
+            points: 200,
+            question:
+                'Am I going to take Computer Science Seminar next year?',
+            answer: 'Maybe',
         },
         {
             points: 300,
             question:
-                'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
-            imgSrc:
-                "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
-            answer: 'Italy',
+                'What is the answer to this math problem?',
+            imgSrc: '/calculus_problem.png',
+            answer: '6',
+        },
+        {
+            points: 400,
+            question:
+                'What state has both the highest and lowest points in the Lower 48 states of the US?',
+            answer: 'California',
         }
-    ]);
-const futureQuestions: Question[] = sortQuestions([
-    {
-        points: 100,
-        question:
-            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc:
-            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
-        answer: 'Isometric',
-    }
+    
 ]);
 
 
 const categories = [
     {
-        title: 'Ms Feng\'s Past',
+        title: 'Felix\'s Past',
         questions: pastQuestions
     },
     {
-        title: `Ms. Feng's Present`,
+        title: `Felix's Present`,
         questions: presentQuestions
     },
     {
-        title: "Ms. Feng's Future",
+        title: "Felix's Future",
         questions: futureQuestions
     }
 ];
